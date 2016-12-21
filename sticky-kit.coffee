@@ -68,7 +68,7 @@ $.fn.stick_in_parent = (opts={}) ->
         padding_bottom = parseInt parent.css("padding-bottom"), 10
 
         parent_top = parent.offset().top + border_top + padding_top
-        parent_height = parent.height()
+        parent_height = parent.outerHeight true
 
         if fixed
           fixed = false
